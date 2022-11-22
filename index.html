@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <div class="contact">
+
+                <div class="contact__top">
+                    <div id="card" class="contact__card">
+                        <img class="contact__image" src="./card.png" alt="">
+                        <img id="logo" src="" alt="" class="">
+                        <h2 class="card__title"></h2>
+                        <strong class="card__number">#### #### #### ####</strong>
+                        <div class="card__right">
+                            <p class="card__date month">##</p> 
+                            <p class="contact__slash">/</p>
+                            <p class="card__date year">####</p>
+                        </div> 
+                        <div class="card__bottom">
+                            <p class="card__name firstname">???????</p>
+                            <p class="card__name name">????</p> 
+                        </div>
+                        
+                        <div class="contact__cardback">
+                            <div class="contact__line"></div>
+                            <span class="contact__cardcvc">CVC</span>
+                            <p class="cvc"></p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+
+                <form id="form" action="" class="contact__form">
+                    <div class="contact__box">
+                        <span class="contact__label">Card number</span>
+                        <input pattern="[0-9]{16}" id="number" class="contact__inp" maxlength="16" type="text" placeholder="Card number">
+                    </div>
+                    <div class="contact__box">
+                        <span class="contact__label">First name</span>
+                        <input maxlength="14" id="firstname" class="contact__inp"  type="text" placeholder="First name">
+                    </div>
+                    <div class="contact__box">
+                        <span class="contact__label">Name</span>
+                        <input id="name" class="contact__inp"  type="text" placeholder="Name">
+                    </div>
+                    
+                    <div class="contact__flexbox">
+                        <div class="contact__inputbox">
+                            <span class="contact__label">Month</span>
+                            <select name="" id="monthselect" class="contact__select">
+                                <option value="month" selected disabled>Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+
+                        <div class="contact__inputbox">
+                            <span class="contact__label">Year</span>
+                            <select name="" id="yearselect" class="contact__select">
+                                <option value="year" selected disabled>Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                        <div class="contact__inputbox">
+                            <span class="contact__label">CVV</span>
+                            <input id="cvc" type="text" min="0" max="4" maxlength="4"  pattern="[0-9]{4}" class="contact__inp" onmouseenter="mouse()"  onmouseleave="mouse1()">
+                        </div>
+                    </div>
+                    <!-- <div class="contact__flexbox">
+                        <div class="contact__inputbox">
+                            <span class="contact__label">Year</span>
+                            <select name="" id="" class="contact__select">
+                                <option value="year" selected disabled>Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contact__inputbox">
+                        <span class="contact__label">CVV</span>
+                        <input type="text" maxlength="4" class="contact__inp">
+                    </div> -->
+
+                    <!-- <input pattern="[0-9]{5}" class="contact__inp" type="text" placeholder="Karta raqmai">
+                    <input value="" class="contact__inp"  type="number" placeholder="Oy">
+                    <input value="" class="contact__inp"  type="number" placeholder="Yil">
+                    <input value="" class="contact__inp"  type="text" placeholder="Ism">
+                    <input value="" class="contact__inp"  type="text" placeholder="Familiya">
+                    <input value="" class="contact__inp"  type="text" placeholder="CVC"> -->
+                    
+                    <button class="contact__btn" type="submit">Tasdiqlash</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
