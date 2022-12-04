@@ -130,7 +130,7 @@
     background: linear-gradient(45deg,#0a2241 , #0aca6a);
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
     backface-visibility: hidden;
-    transition: 0.3s ease-in-out;
+    transition: 1.5s ease-in-out;
     transform: perspective(1000px) rotateY(0deg);
     
     .card__title{
@@ -152,9 +152,10 @@
 
     .contact__uzcard{
         position: absolute;
+        top: -5px;
         right: 0;
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 110px;
         
     }
 
@@ -211,8 +212,8 @@
     background: linear-gradient(45deg,#0a2241 , #0aca6a);
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
     backface-visibility: hidden;
-    transform: perspective(1000px) rotateY(180deg);
-    transition: 0.3s ease-in-out;
+    transform: perspective(1000px) rotateY(-180deg);
+    transition: 1.5s ease-in-out;
     
     .contact__line{
         position: absolute;
@@ -238,8 +239,8 @@
 
     .contact__cardcvc{
         position: relative;
-        left: 86%; 
         top: 34%;
+        right: 0px;
         color: #fff;
         letter-spacing: 2px;
     }
